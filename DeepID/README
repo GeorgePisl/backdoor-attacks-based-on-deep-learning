@@ -1,0 +1,14 @@
+Requirement is the "Youtube Faces Aligned Dataset" [aligned_images_DB] downloadable from https://www.cs.tau.ac.il/~wolf/ytfaces/index.html#download
+
+1) run "crop.py"
+2) run "split*.py"
+3) run "vec.py"
+4) run "deepid1.py" for training
+5) run "predict*.py"
+
+INPUT-INSTANCE ATTACK
+run "create_input_instances.py" to create the poison samples and backdoor samples after the "crop" and before the "split"
+
+NOTE that if you want to avoid the training..we provided for every attack the "checkpoint" folder, poison and backdoor folders and the *.csv files. The "checkpoint" folder contains the checkpoints of the model for predictions and we can run directly the "predict*.py" file.
+
+
